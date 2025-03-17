@@ -34,41 +34,33 @@
             </p>
         </div>
         <!-- formulario de presupuesto -->
-        <div class="container-pres">
-            <h2>Presupuesto</h2>
-            <form action="#" name="form-presupuesto" id="form-presupuesto" method="get" target="_self">
-                <ul class="lista-principal">
-                    <li>
-                        <label for="nombre-pres">Nombre</label>
-                        <input type="text" id="nombre-pres" name="nombre-pres" placeholder="Escriba su nombre"
-                        pattern="[A-Z a-z]{3,15}" title="Aqui debes escribir tu nombre" autofocus required>
-                    </li>
-                    <li>
-                        <label for="apellido-pres">Apellido</label>
-                        <input type="text" id="apellido-pres" name="apellido-pres" placeholder="Escriba su apellido"
-                        pattern="[A-Z a-z]{3,15}" title="Aqui debes escribir tu apellido" required>
-                    </li>
-                    <li>
-                        <label for="correo-pres">Correo electronico</label>
-                        <input type="email" id="correo-pres" name="correo-pres" placeholder="Escriba su correo electronico"
-                        pattern="[A-Za-z0-9_-.]+@[A-Za-z0-9_-.]+\.[a-z]{2,4}" title="Aqui debes escribir tu correo" required>
-                    </li>
-                    <li>
-                        <label for="telephono">Telefono</label>
-                        <input type="tel" id="telephono" name="telephono" placeholder="Escriba su Telefono" pattern="[0-9]{9}" title="escriba los nueve numeros de su telefono movil" required>
-                    </li>
-                    <li>
-                        <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" rows="6" placeholder="escriba su comentario"></textarea>
-                    </li>
-                    <li class="check-term">
-                        <input type="checkbox" id="check-term" name="check-term">
-                        <p>Acepto los <a href="#">Terminos y condiciones</a></p>
-                    </li>
-                    <li>
-                        <button type="submit">Enviar</button>
-                    </li>
-                </ul>
+        <div class="contenedor">
+            <h1 class="titulo">PRESUPUESTO</h1>
+    
+            <form class="form" id="formulario">
+                <div class="input-contenedor">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre"  name="nombre">
+                    <span class="error" id="nombreError"></span>
+                </div>
+                <div class="input-contenedor">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono">
+                    <span class="error" id="telefonoError"></span>
+                </div>
+                <div class="input-contenedor">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"  name="email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="input-contenedor">
+                    <label for="contrasena">Mensaje</label>
+                    <textarea id="contrasena"  name="contrasena" rows="3" placeholder="Escriba aqui su comentario"></textarea>
+                    <span class="error" id="contrasenaError"></span>
+                </div>
+                <div class="button-contenedor">
+                    <button type="submit">Registrarse</button>
+                </div>
             </form>
         </div>
     </section>
@@ -92,5 +84,8 @@
             <a href="https://www.google.com/maps/place/Hermosas+by+yane/@41.449293,2.2280487,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4bbcbfd74d391:0xc00b3490889d9a66!8m2!3d41.449293!4d2.2306236!16s%2Fg%2F11vpvbbpv5?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">Ir a Google Maps</a>
         </div>
     </footer>
+
+    <script src="./../js/validarFormulario.js"></script>
+
 </body>
 </html>

@@ -209,84 +209,67 @@ h2{
     background-color: #24303c2a;
     border-radius: 10px;
 }
-.container-pres{
-    margin: 30px;
-    padding: 1.5% 1.5%;
-    border-radius: 5px;
-    background: #24303c;
-    box-shadow: 7px 13px 37px #000;
-}
-.container-pres *{
-    box-sizing: border-box;
-}
-.container-pres h2{
-    padding-top: 0;
-    margin-top: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(228, 228, 228);
-}
-.lista-principal{
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px;
-}
-.lista-principal li{
+.contenedor{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    font-weight: 200;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 40px 10px ;
+    background-color: #fff;
 }
-.lista-principal li:not(:last-child){
-    margin-bottom: 20px
+.titulo{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;    
 }
-.lista-principal > li > label{
-    padding: 8px;
-    font-weight: 200;
-    font-size: small;
-    letter-spacing: .09em;
-    text-transform: uppercase;
-    flex: 1 0 30px;
-    max-width: 300px;
-    color: rgb(228, 228, 228);
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.input-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-.lista-principal > li > label + *{
-    flex: 1 0 210px;
-    max-width: 500px;
-}
-.check-term{
-    justify-content: center;
-    letter-spacing: .09em;
-    text-transform: uppercase;
-}
-.check-term input{
-    margin: 0 20px 0 0;
-}
-.check-term p, .check-term a{
-    color: rgb(228, 228, 228);
-    font-weight: 200;
-    font-size: small;
-}
-.lista-principal li:last-child{
-    justify-content: center;
-}
-.lista-principal li input, .lista-principal li textarea{
-    padding: 10px;
-    border-radius: 5px;
-    background: #24303c;
-    border: 2px solid rgb(131, 131, 131);;
-    color: antiquewhite;
-    font-size:small;
-}
-.lista-principal li button{
-    background: #1f53c5;
-    width: 95%;
+input{
     padding: 5px;
-    color: #fff;
-    font-size: larger;
+    border: none;
+    border-bottom: 2px solid grey;
 }
-.lista-principal li input:focus,.lista-principal li textarea:focus{
-    background: #34383c;
+.button-contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(208, 207, 207);
+}
+.valido{
+    border-color: green;
+}
+.invalido{
+    border-color: red;
+}
+.error{
+    color: red;
+}
+textarea{
+    border: none;
+    border-bottom: 2px solid grey;
+    overflow:auto;
+    font-size: 16px;
 }
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||||||||||||||||||||||||||||||MAIN CONTACTO||||||||||||||||||||||||||||||||||||||||||||*/
