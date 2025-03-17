@@ -545,6 +545,7 @@ footer div a{
         align-items: center;
         padding: 10px;
         gap: 80px;
+        border: none;
     }
     .informacionContacto{
         margin: 20px;
