@@ -290,6 +290,7 @@ textarea{
     align-items: center;
     justify-content: center;
     width: 30%;
+    gap: 40px;
 }
 .informacionContacto p{
     text-align: justify;
@@ -299,11 +300,12 @@ textarea{
     text-indent: 30px;
     width: 100%;
 }
-.mapa1{
-    max-width: 400px;
-    max-height: 400px;
-    width: 30%;
-    height: 100%;
+.mapa{
+    max-width: 500px;
+    width: 500px;
+    height: 470px;
+    box-shadow: 7px 13px 30px #000;
+    
 }
 .contenedorCont{
     display: flex;
@@ -317,13 +319,8 @@ textarea{
     background-color: #fff;
     box-shadow: 7px 13px 30px #000;
 }
-.mapa{
-    box-shadow: 7px 13px 30px #000;
-}
-.mapa iframe{
-    width: 470px;
-    height: 470px;
-}
+
+
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||||||||||||||||||||||||||||||MAIN PRODUCTOS|||||||||||||||||||||||||||||||||||||||||||*/
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -556,15 +553,11 @@ footer div a{
     
     .mapa{
         width: 100%;
-        max-width: 500px;
     }
-    .mapa1{
-        width: 100%;
-        max-width: 500px;
-    }
+
     .contenedorCont{
         max-width: 500px;
-        width: 90%;
+        width: 100%;
     }
     /*--------------------------------MAIN-GALERIA-------------------------------------*/
     .galeria{
