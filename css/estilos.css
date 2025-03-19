@@ -319,7 +319,9 @@ textarea{
     background-color: #fff;
     box-shadow: 7px 13px 30px #000;
 }
-
+.abajo{
+    display: none;
+}
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||||||||||||||||||||||||||||||MAIN PRODUCTOS|||||||||||||||||||||||||||||||||||||||||||*/
@@ -559,6 +561,13 @@ footer div a{
         max-width: 500px;
         width: 100%;
     }
+    .der{
+        display: none;
+    }
+    .abajo{
+        display: inline;
+    }
+    
     /*--------------------------------MAIN-GALERIA-------------------------------------*/
     .galeria{
         justify-content: center;
